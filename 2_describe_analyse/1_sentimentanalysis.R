@@ -93,10 +93,10 @@ df_counts <- df %>%
 # Create stacked bar plot
 ggplot(df_counts, aes(x = age, y = Count, fill = belletristik)) +
   geom_bar(stat = "identity", fill = "lightblue", color = "black") +
-  xlab("Birth Year of Author") +
+  xlab("Age of Author") +
   ylab("Book Count") +
   labs(fill = "") +
-  ggtitle("Books Published per Birth Year") +
+  ggtitle("Books Published per Age") +
   theme_minimal(base_size = 20) +
   theme(legend.position="bottom")
 
